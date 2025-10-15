@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
 
     <!-- Importação da fonte via google fonts-->
     <style>
@@ -18,33 +19,30 @@
 
 <body>
     <header> 
+                <i class="fa-solid fa-hands-holding-circle fa-xl" id="nav_logo"> Rede Voluntaria</i>
         <nav>
-        <i class="fa-solid fa-hands-holding-circle fa-xl" id="nav_logo"> Rede Voluntaria</i>
             <ul id="nav_list">
-                <li class="nav-item active"><a href="#Pagina Inicial">Pagina Inicial</a></li>
-                <li class="nav-item"><a href="#Projetos Sociais">Projetos Sociais</a></li>
-                <li class="nav-item"><a href="#Cadastro">Cadastro</a></li>
+                <li><a href="#Pagina Inicial">Pagina Inicial</a></li>
+                <li><a href="#Projetos Sociais">Projetos Sociais</a></li>
+                <li><a href="#Cadastro">Cadastro</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
-        
-        <section class="quemsomos">
-            <h2>Quem somos?</h2>
-            <p>
-                A plataforma Rede Voluntária foi criada pela equipe Baubs com o intuíto de ajudar Ongs e organizações sociais no geral, sem fins lucrativos, a gestionar seus projetos e voluntários de forma eficiente e simples, permitindo uma divulgação direta, ampla e organizada.
-            </p>
-
-        
-        </section>
-        <section class="slider">
-            <img src="assets/img/cartaz1.png" alt="Cartaz 1">
-            <img src="assets/img/cartaz2.png" alt="Cartaz 2">
-            <img src="assets/img/cartaz3.png" alt="Cartaz 3">
-            <button class="left">&#10094;</button>
-            <button class="right">&#10095;</button>
+        </section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+            <img id="slide-1" src="assets/img/cartaz1.png" alt="Cartaz 1">
+            <img id="slide-2" src="assets/img/cartaz2.png" alt="Cartaz 2">
+            <img id="slide-3" src="assets/img/cartaz3.png" alt="Cartaz 3">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
         </section>
 
 
@@ -55,6 +53,11 @@
             <p>Endereço: Rua dos bobos, 0, São Paulo, SP</p>
         </section>
 
+        <footer>
+
+            <p>&copy; 2024 Rede Voluntária. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Equipe Baubs</p>
+        </footer>
     </main>
 </body>
 </html>

@@ -1,45 +1,51 @@
 /*Definindo navbar */
 header {
+    background-color: rgb(109, 53, 53);
     width: 100%;
-    padding: 10px;  
-    position: sticky;
     top: 0;
+    left: 0;
+    padding: 10px 0 0;
+    z-index: 1000;
+    position: sticky;
 }
 
 nav {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+    padding: 1rem;
 }
 
-/*Parametros da logo*/
 #nav_logo {
-    font-size: 24x;
-    color:rgb(5, 106, 113);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+
 }
 
-/*Parametros dos itens da lista*/
-#nav_list {
-    display: flex;
+nav ul {
     list-style: none;
-    gap: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0; 
 }
 
-/*Cor dos links da navbar*/
-.nav-item a {
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: rgba(11, 1, 82, 0.596);
-    font-weight: 600;
-    transition: color .2s ease;
-}
-/*Quando o item da lista estiver active*/
-.nav-item.active a{
-    color:rgb(28, 23, 102);
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
 }
 
-/*Quando passa o mouse em cima da lista*/
-.nav-item a:hover {
-    color: rgba(45, 33, 117, 0.795);
+nav ul li a:hover {
+    background-color: #9c1e1e59;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
