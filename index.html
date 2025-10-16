@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="assets/css/slider.css">
 
     <!-- Importação da fonte via google fonts-->
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 </style>
 
     <!-- Importação do ícone via font awesome-->
@@ -30,18 +30,46 @@
     </header>
 
     <main>
-        </section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-            <img id="slide-1" src="assets/img/cartaz1.png" alt="Cartaz 1">
-            <img id="slide-2" src="assets/img/cartaz2.png" alt="Cartaz 2">
-            <img id="slide-3" src="assets/img/cartaz3.png" alt="Cartaz 3">
+
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h1>Bem-vindo à Rede Voluntária</h1>
+            <p>Conectando pessoas e causas para um mundo melhor.</p>
+            <a href="#Cadastro" class="btn">Junte-se a nós</a>
+        </section>
+
+        <!-- Seção de projetos sociais (Slider) -->
+        <section class="slider">
+        <div class="slides">
+            <!-- Radio buttons para navegação -->
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <!-- Slides -->
+            <div class="slide first">
+            <img src="assets/img/cartaz1.png" alt="Cartaz 1">
             </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+
+            <div class="slide">
+                <img src="assets/img/cartaz2.png" alt="Cartaz 2">
             </div>
+            <div class="slide">
+                <img src="assets/img/cartaz3.png" alt="Cartaz 3">
+            </div>
+
+            <!-- Navegação automática -->            
+             <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
+        <!-- Navegação manual -->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
         </div>
         </section>
 
@@ -53,11 +81,15 @@
             <p>Endereço: Rua dos bobos, 0, São Paulo, SP</p>
         </section>
 
-        <footer>
 
-            <p>&copy; 2024 Rede Voluntária. Todos os direitos reservados.</p>
-            <p>Desenvolvido por Equipe Baubs</p>
-        </footer>
+
+        <script src="assets/js/script.js"></script>
     </main>
+
+    <footer>
+
+            <p>&copy; 2025 Rede Voluntária. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Equipe Baubs</p>
+    </footer>
 </body>
 </html>
